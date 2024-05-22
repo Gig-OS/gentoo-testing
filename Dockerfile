@@ -10,7 +10,7 @@ RUN set -eux;                                                                   
                                                                                             \
     eselect news read --quiet new >/dev/null 2&>1;                                          \
     echo 'FEATURES="-ipc-sandbox -network-sandbox -pid-sandbox"' >> /etc/portage/make.conf; \
-    echo 'PYTHON_TARGETS="python3_10 python3_11"' >> /etc/portage/make.conf;                \
+    echo 'PYTHON_TARGETS="python3_12 python3_11"' >> /etc/portage/make.conf;                \
     emerge --info;                                                                          \
     emerge --verbose --quiet --jobs $(nproc) --autounmask y --autounmask-continue y         \
         app-eselect/eselect-repository                                                      \

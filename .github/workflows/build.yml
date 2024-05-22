@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE: liangyongxiang/gentoo-testing
+  IMAGE: gig-os/gentoo-testing
 
 jobs:
   build-and-push:
